@@ -61,7 +61,11 @@ export default {
   data(){
     return {
       datacollection : null,
-      loaded : false
+      loaded : false,
+      temperature: [0,1,2,3,4,5,6,7,8,9],
+      humidity: [9,8,7,6,5,4,3,2,1,0],
+      potentio: [4,6,4,6,4,6,4,6,4,6],
+      time: [0,1,2,3,4,5,6,7,8,9]
     }
   },
   mounted(){
@@ -70,7 +74,7 @@ export default {
   methods : {
     fillData(){
       this.datacollection = {
-        labels : [0,1,2,3,4,5,6,7,8,9],
+        labels : this.time,
         datasets : [
           {
             label : 'Temp (°C)',
@@ -79,7 +83,25 @@ export default {
             pointBackgroundColor : 'red',
             borderWidth: 1,
             pointBorderColor : 'red',
-            data : [0,1,2,3,4,5,6,7,8,9]
+            data : this.temperature
+          },
+          {
+            label : 'Hum (%)',
+            backgroundColor : 'rgba(0,0,255,0.2)',
+            borderColor : 'lightblue',
+            pointBackgroundColor : 'blue',
+            borderWidth: 1,
+            pointBorderColor : 'blue',
+            data : this.humidity
+          },
+          {
+            label : 'Potentio',
+            backgroundColor : 'rgba(255,255,0,0.2)',
+            borderColor : 'orange',
+            pointBackgroundColor : 'orange',
+            borderWidth: 1,
+            pointBorderColor : 'orange',
+            data : this.potentio
           }
         ]
       }
