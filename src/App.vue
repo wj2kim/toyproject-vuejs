@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <h3>Toy_Project using Vue.js and Chart.js</h3>
-    <StatisticsChart/>
+    <Chart/>
   </div>
 </template>
 
 <script>
-import StatisticsChart from './components/StatisticsChart.vue'
+import Chart from './components/Chart.component.vue'
 
 export default {
   name: 'App',
   components: {
-    StatisticsChart
+    Chart
   }
 }
 </script>

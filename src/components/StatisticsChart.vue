@@ -1,5 +1,4 @@
 <template>
-
   <div class ="area">
     <form class="col s12">
       <div class="row">
@@ -48,11 +47,11 @@
     >
     </LineChart>
   </div>
-
 </template>
 
 <script>
 import LineChart from './StatisticsLine.js'
+
 
 export default {
   components : {
