@@ -1,10 +1,11 @@
 <template>
-    <div> 
-        <div>
-            <div class="example">
-                <apexcharts type="bar" height="350" :options="chartOptions" :series="series"></apexcharts>
-            </div>
-        </div>
+    <div class="example">
+      <div>
+        <h3>스택크드 차트 샘플</h3>
+      </div>  
+      <div>
+       <apexcharts type="bar" height="350" :options="chartOptions" :series="series"></apexcharts>
+      </div>
     </div>
 </template>
 
@@ -12,7 +13,7 @@
 import VueApexCharts from 'vue-apexcharts'
 
 export default {
-  name: 'Chart',
+  name: 'stackedChart',
   components: {
     apexcharts: VueApexCharts,
   },

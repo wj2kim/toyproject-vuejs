@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Chart from './components/Chart.component.vue'
+import Chart from './components/StatisticsChart.vue'
 
 export default {
   name: 'App',
