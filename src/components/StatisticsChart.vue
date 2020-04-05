@@ -16,9 +16,7 @@ export default {
      DonutChart
    },
    methods: {
-     created() {
-       alert("created");
-     }
+     
    }
 }
 </script>
